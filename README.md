@@ -38,5 +38,3 @@ This automation flow can be used to repeat or reschedule a groceries order on Re
 
 This automation flow performs bulk registration for trainees through IMDA ICMS website (CITREP) used by course providers. You can use this template to modify parameters accordingly, and use the sample csv datatable template.
 
-## CA Trust PAC - to be confirmed and shortlisted for sharing (WIP)
-
