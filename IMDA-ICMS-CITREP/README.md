@@ -1,6 +1,6 @@
 ## IMDA ICMS - upload trainees details for CITREP reimbursement
 
-![citrep_upload.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/development/IMDA-ICMS-CITREP/citrep_upload.gif)
+![citrep_upload.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/IMDA-ICMS-CITREP/citrep_upload.gif)
 
 This automation flow performs bulk registration for trainees through IMDA ICMS website (CITREP) used by course providers. You can use this template to modify parameters accordingly, and use the sample csv datatable template.
 

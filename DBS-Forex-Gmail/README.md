@@ -1,6 +1,6 @@
 ## DBS.com & Gmail - download forex rates and send using Gmail
 
-![forex_gmail.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/development/DBS-Forex-Gmail/forex_gmail.gif)
+![forex_gmail.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/DBS-Forex-Gmail/forex_gmail.gif)
 
 This automation flow gets forex rates from DBS.com and sends a csv file of the forex rates using Gmail. The flow was done on macOS Google Chrome at 125% zoom, images may have to be replaced with your browser's to work.
 
@@ -72,4 +72,4 @@ wait 15 seconds
 
 #### Image Assets
 
-![forex_gmail.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/development/DBS-Forex-Gmail/forex_gmail.png)
+![forex_gmail.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/DBS-Forex-Gmail/forex_gmail.png)
