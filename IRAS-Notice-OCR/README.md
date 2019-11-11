@@ -1,8 +1,8 @@
 ## IRAS.gov.sg - extract details from document using OCR
 
-![iras_ocr.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/IRAS-Notice-OCR/iras_ocr.gif)
-
 This automation flow downloads a document from IRAS and uses OCR to extract information from the document. Accounting firms can do this at scale to download and automate part of their business processes for clients.
+
+![iras_ocr.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/IRAS-Notice-OCR/iras_ocr.gif)
 
 #### TagUI Workflow
 
