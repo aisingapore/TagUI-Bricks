@@ -21,8 +21,8 @@ for row from 1 to 19
     // intro to XPath - https://builtvisible.com/seo-guide-to-xpath
 
     // form XPath element identifiers for cells in table
-    read (//*[@data-before-text="Currency"])[`row`] to currency
-    read (//*[@data-before-text="Selling TT/OD"])[`(2 * row - 1)`] to rate
+    read ((//*[contains(@class,"tbl-primary")]/tbody/tr)[`row`]//td)[1] to currency
+    read ((//*[contains(@class,"tbl-primary")]/tbody/tr)[`row`]//td)[3] to rate
 
     // show the forex rate as it is being extracted
     echo '1 ' currency ' to S$' rate
