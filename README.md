@@ -37,3 +37,9 @@ This automation flow can be used to repeat or reschedule a groceries order on Re
 This automation flow performs bulk registration for trainees through IMDA ICMS website (CITREP) used by course providers. You can use this template to modify parameters accordingly, and use the sample csv datatable template.
 
 ![citrep_upload.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/IMDA-ICMS-CITREP/citrep_upload.gif)
+
+## [Xero Accounting - upload trainees details for CITREP reimbursement](https://github.com/aimakerspace/TagUI-Bricks/tree/master/Xero-Accounting)
+
+This automation flow performs bulk registration for trainees through IMDA ICMS website (CITREP) used by course providers. You can use this template to modify parameters accordingly, and use the sample csv datatable template.
+
+![xero_accounting.png](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/Xero-Accounting/xero_accounting.png)
