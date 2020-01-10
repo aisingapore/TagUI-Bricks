@@ -42,4 +42,4 @@ This automation flow performs bulk registration for trainees through IMDA ICMS w
 
 This automation flow downloads a specific recurring report from Xero cloud accounting software. It is created at [CA Trust PAC](https://casingapore.org), an accounting firm in Singapore, with the help of intern students from [Temasek Polytechnic](https://www.tp.edu.sg).
 
-![xero_accounting.png](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/Xero-Accounting/xero_accounting.png)
+![xero_cover.png](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/Xero-Accounting/xero_cover.png)
