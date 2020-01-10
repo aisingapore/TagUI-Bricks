@@ -1,75 +1,61 @@
-## DBS.com & Gmail - download forex rates and send using Gmail
+## Xero Accounting - download report from Xero accounting software
 
-This automation flow gets forex rates from DBS.com and sends a csv file of the forex rates using Gmail. The flow was done on macOS Google Chrome at 125% zoom, images may have to be replaced with your browser's to work.
+This automation flow downloads a specific recurring report from Xero cloud accounting software. It is created at [CA Trust PAC](https://casingapore.org), an accounting firm in Singapore, with the help of intern students from [Temasek Polytechnic](https://www.tp.edu.sg).
 
-![forex_gmail.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/DBS-Forex-Gmail/forex_gmail.gif)
+![xero_cover.png](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/Xero-Accounting/xero_cover.png)
 
 #### TagUI Workflow
-
 ```
-// visit DBS website with a table of foreign currency exchange rates
-https://www.dbs.com.sg/personal/rates-online/foreign-currency-foreign-exchange.page
+// start by opening existing browser session
+// and create a new tab to visit Xero homepage
+click chromelogo.png
+click newtab.png
+keyboard https://go.xero.com[enter]
 
-// create a blank csv file with the header row containing 2 columns
-// \r\n represent the line break characters (enter key) for Windows
-dump 'Currency,Rate\r\n' to numbers.csv
+// enter credentials and login by using [ctrl]a
+// to select any pre-filled text and type over
+click email.png
+keyboard [ctrl]a
+keyboard your_email
+click password.png
+keyboard [ctrl]a
+keyboard your_password
+click loginbutton.png
+wait 2 seconds 
 
-// extract only the main forex rates table with 19 rows of data
-for row from 1 to 19
-{
-    // XPath is a powerful way to identify webpage UI elements
-    // intro to XPath - https://builtvisible.com/seo-guide-to-xpath
+// navigate to the aged receivables report
+click accountingmenu.png
+click reportoption.png
+click agedreceivablebutton.png
+wait 10 seconds
 
-    // form XPath element identifiers for cells in table
-    read ((//*[contains(@class,"tbl-primary")]/tbody/tr)[`row`]//td)[1] to currency
-    read ((//*[contains(@class,"tbl-primary")]/tbody/tr)[`row`]//td)[3] to rate
+// enter filter criteria for the report
+click reportsettingsbutton.png
+click todaydropdown.png
+click endoflastmonth.png
+click standarddropdown.png
+click groupbyoption.png
+click contactgroupdropdown.png
+click partneroption.png
+click updatebutton.png
+wait 2 seconds
 
-    // show the forex rate as it is being extracted
-    echo '1 ' currency ' to S$' rate
-
-    // save current row of forex rate to the csv file
-    // by using csv_row() function on an array of fields
-    forex_rate = [currency, 'S$' + rate]
-    write csv_row(forex_rate) to numbers.csv
-}
-
-// increase timeout from default 10 seconds to 60 seconds,
-// to let user sign in to Gmail if it is not yet signed in
-timeout 60 seconds
-
-// Gmail is used here to send email, but desktop apps such as Outlook
-// can also be used by providing image snapshots of their UI elements.
-// To use image snapshots in this workflow, set the browser to 125% zoom.
-// (Chrome was set at 125% zoom for this workflow to show actions clearly)
-https://mail.google.com/mail/u/0/
-
-// set focus to Chrome browser and compose a new message
-click chrome_icon.png
-click gmail_compose.png
-
-// fill up different fields in the new message window
-// change to your email address to test this workflow
-type gmail_to.png as ksoh@aisingapore.org
-enter gmail_body.png as Hi Boss,[enter][enter]Attached are the forex rates for today.[enter][enter]Regards,[enter]Ken
-type gmail_subject.png as Daily Forex Rates
-
-// attach csv file of forex rates and send the email
-// (assume current folder is at the workflow location)
-click gmail_attach.png
-click numbers_icon.png
-click gmail_open.png
-
-// wait a while to make sure csv file has been uploaded
+// download the report to Excel spreadsheet
+click exportbutton.png
+click excelbutton.png
 wait 5 seconds
-click gmail_send.png
 
-// wait for some time to see the email in your inbox
-wait 15 seconds
+// log out so that users can sign in again
+click profilebutton.png
+click logoutbutton.png
+wait 3 seconds
+
+// close the new tab opened at the start
+keyboard [ctrl]w
 ```
->In normal situations, Chrome must be set at 100% zoom for TagUI to work. Because TagUI replicates mouse clicks at the x,y coordinates of elements. Here, visual automation method is used, thus 125% zoom works for Gmail.
 
->Workflows can be scheduled to run periodically as required. Eg using task scheduler on Windows or crontab on macOS & Linux to schedule outside of office hours or on a dedicated computer.
+>In this workflow, visual automation is used to interact with UI elements on Xero website using image snapshots. Using web element identiers work as well, if not better. In that mode, user will not see the mouse cursor moving.
 
 #### Image Assets
 
-![forex_gmail.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/DBS-Forex-Gmail/forex_gmail.png)
+![xero_accounting.png](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/Xero-Accounting/xero_accounting.png)
