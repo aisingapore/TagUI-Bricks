@@ -38,8 +38,8 @@ This automation flow performs bulk registration for trainees through IMDA ICMS w
 
 ![citrep_upload.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/IMDA-ICMS-CITREP/citrep_upload.gif)
 
-## [Xero Accounting - upload trainees details for CITREP reimbursement](https://github.com/aimakerspace/TagUI-Bricks/tree/master/Xero-Accounting)
+## [Xero Accounting - download report from Xero accounting software](https://github.com/aimakerspace/TagUI-Bricks/tree/master/Xero-Accounting)
 
-This automation flow performs bulk registration for trainees through IMDA ICMS website (CITREP) used by course providers. You can use this template to modify parameters accordingly, and use the sample csv datatable template.
+This automation flow downloads a specific recurring report from Xero cloud accounting software. It is created at [CA Trust PAC](https://casingapore.org), an accounting firm in Singapore, with the help of internship students from [Temasek Polytechnic](https://www.tp.edu.sg).
 
 ![xero_accounting.png](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/Xero-Accounting/xero_accounting.png)
