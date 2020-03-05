@@ -4,7 +4,7 @@
 
 For questions on these workflows, [raise a GitHub issue here](https://github.com/aimakerspace/TagUI-Bricks/issues). Community contributions are welcome. If you are using TagUI for an existing workflow and found it to be useful, raise an issue so that we can guide you through a PR (pull request) to commit to this repository of sample templates.
 
-# Sample Templates
+# Sample Templates ([download these templates](https://github.com/aimakerspace/TagUI-Bricks/releases/download/v1.0.0/TagUI-Bricks.zip))
 
 ## [DBS.com & Gmail - download forex rates and send using Gmail](https://github.com/aimakerspace/TagUI-Bricks/tree/master/DBS-Forex-Gmail)
 
