@@ -1,4 +1,4 @@
-## RedMart.com - repeat or reschedule groceries order
+## RedMart.com - repeat or reschedule groceries order ([download template](https://github.com/aimakerspace/TagUI-Bricks/releases/download/v1.0.0/RedMart-Order.zip))
 
 This automation flow can be used to repeat or reschedule a groceries order on RedMart base on a previous order. RedMart has no way to repeat or reschedule an order besides manually clicking to add item by item from an old order.
 
