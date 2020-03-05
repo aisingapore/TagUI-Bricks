@@ -1,4 +1,4 @@
-## Xero Accounting - download report from Xero accounting software
+## Xero Accounting - download report from Xero accounting ([download template](https://github.com/aimakerspace/TagUI-Bricks/releases/download/v1.0.0/Xero-Accounting.zip))
 
 This automation flow downloads a specific recurring report from Xero cloud accounting software. It is created at [CA Trust PAC](https://casingapore.org), an accounting firm in Singapore, with the help of intern students from [Temasek Polytechnic](https://www.tp.edu.sg).
 
