@@ -1,4 +1,4 @@
-## Microsoft Word - automate printing of thank you letters
+## Microsoft Word - automate printing of thank you letters ([download template](https://github.com/aimakerspace/TagUI-Bricks/releases/download/v1.0.0/MS-Word-Letter.zip))
 
 This automation flow opens a Microsoft Word document, fills up required information and prints the document. The flow was done for macOS Microsoft Word at 200% zoom, images must be replaced with your environment's to work.
 
