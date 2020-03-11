@@ -174,7 +174,7 @@ trainee_count = '`[iteration]`'
 read //*[@id="TeSuccessForm"]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/table/tbody/tr/td[1]/span to trainee_name
 read //*[@id="TeSuccessForm"]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/table/tbody/tr/td[3]/span to enrolment_id
 trainee_info = [trainee_count, trainee_name, enrolment_id]
-write csv_row(trainee_info) to upload_results.csv
+write `csv_row(trainee_info)` to upload_results.csv
 
 // click OK button to continue
 click //*[@id="TeSuccessForm"]/table/tbody/tr[2]/td/table/tbody/tr[3]/th/input
