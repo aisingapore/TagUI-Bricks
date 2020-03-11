@@ -7,8 +7,7 @@
 https://www.dbs.com.sg/personal/rates-online/foreign-currency-foreign-exchange.page
 
 // create a blank csv file with the header row containing 2 columns
-// \r\n represent the line break characters (enter key) for Windows
-dump 'Currency,Rate\r\n' to numbers.csv
+dump Currency,Rate to numbers.csv
 
 // extract only the main forex rates table with 19 rows of data
 for row from 1 to 19
@@ -21,12 +20,12 @@ for row from 1 to 19
     read ((//*[contains(@class,"tbl-primary")]/tbody/tr)[`row`]//td)[3] to rate
 
     // show the forex rate as it is being extracted
-    echo '1 ' currency ' to S$' rate
+    echo 1 `currency` to S$`rate`
 
     // save current row of forex rate to the csv file
     // by using csv_row() function on an array of fields
     forex_rate = [currency, 'S$' + rate]
-    write csv_row(forex_rate) to numbers.csv
+    write `csv_row(forex_rate)` to numbers.csv
 }
 
 // increase timeout from default 10 seconds to 60 seconds,
