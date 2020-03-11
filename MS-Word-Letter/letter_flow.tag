@@ -13,7 +13,8 @@ dclick letter_icon.png
 
 // modify fields - can be hardcoded, repositories or datatables
 dclick template_address.png
-type page.png as John Lim[enter]123 ABC Street[enter]Singapore 1234567[clear]
+type page.png as John Lim[enter]123 ABC Street[enter]Singapore 123456789
+keyboard [clear][clear][clear]
 
 dclick template_name.png
 type page.png as John
