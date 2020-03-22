@@ -1,6 +1,6 @@
 ## WHO Report - extract and email statistic ([download template](https://github.com/aimakerspace/TagUI-Bricks/releases/download/v1.0.0/WHO-Report.zip))
 
-This automation workflow grabs WHO daily situation report (PDF file), extracts a summary of the latest statistics, and emails the summary.
+This automation workflow grabs WHO daily situation report (PDF file), extracts a summary of the latest statistics, and emails the summary. The automation can be run using `tagui who_report.tag -nobrowser` or scheduled using crontab scheduler to repeat daily automatically. See workflow below with comments on how it is done.
 
 ![who_report.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/WHO-Report/who_report.gif)
 
@@ -16,9 +16,6 @@ This automation workflow grabs WHO daily situation report (PDF file), extracts a
 // visibility during recording of the video. Computer vision and OCR
 // is used in this workflow as Gmail recently blocks browser automation,
 // thus Gmail interactions cannot be done using web element identifiers.
-
-// The automation can be run using - tagui who_report.tag -nobrowser
-// Or scheduled using crontab scheduler to repeat daily automatically
 
 js begin
 // define list of countries for accurate extraction from PDF table
