@@ -1,5 +1,7 @@
 // This automation workflow grabs WHO daily situation report (PDF file),
 // extracts a summary of the latest statistics, and emails the summary.
+// The automation can be run using - tagui who_report.tag -nobrowser
+// or scheduled using crontab scheduler to repeat daily automatically.
 
 // This workflow is designed for macOS as keyboard shortcuts are
 // specific to macOS. Also, for WHO daily report landing page,
@@ -10,9 +12,6 @@
 // visibility during recording of the video. Computer vision and OCR
 // is used in this workflow as Gmail recently blocks browser automation,
 // thus Gmail interactions cannot be done using web element identifiers.
-
-// The automation can be run using - tagui who_report.tag -nobrowser
-// Or scheduled using crontab scheduler to repeat daily automatically
 
 js begin
 // define list of countries for accurate extraction from PDF table
