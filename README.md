@@ -36,6 +36,12 @@ This automation workflow grabs WHO daily situation report (PDF file), extracts a
 
 ![who_report.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/WHO-Report/who_report.gif)
 
+## [MOH Report - extract and email statistic](https://github.com/aimakerspace/TagUI-Bricks/tree/master/MOH-Report) ([download template](https://github.com/aimakerspace/TagUI-Bricks/releases/download/v1.0.0/MOH-Report.zip))
+
+This automation workflow grabs MOH daily situation report (PDF file), creates a snapshot of the latest statistics, and emails the summary. The automation can be run using `tagui moh_report.tag` or scheduled using crontab scheduler to repeat the report daily automatically.
+
+![moh_report.gif](https://raw.githubusercontent.com/aimakerspace/TagUI-Bricks/master/MOH-Report/moh_report.gif)
+
 # Community Templates
 
 ## [IMDA ICMS - upload trainees details for CITREP](https://github.com/aimakerspace/TagUI-Bricks/tree/master/IMDA-ICMS-CITREP) ([download template](https://github.com/aimakerspace/TagUI-Bricks/releases/download/v1.0.0/IMDA-ICMS-CITREP.zip))
