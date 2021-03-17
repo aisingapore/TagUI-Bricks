@@ -13,14 +13,14 @@ dclick letter_icon.png
 
 // modify fields - can be hardcoded, repositories or datatables
 dclick template_address.png
-type page.png as John Lim[enter]123 ABC Street[enter]Singapore 123456789
+keyboard John Lim[enter]123 ABC Street[enter]Singapore 123456789
 keyboard [clear][clear][clear]
 
 dclick template_name.png
-type page.png as John
+keyboard John
 
 dclick template_amount.png
-type page.png as $123.00
+keyboard $123.00
 
 // click to print, then close document without saving changes
 click file_menu.png
