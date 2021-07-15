@@ -11,7 +11,7 @@ This automation flow performs bulk registration for trainees through IMDA ICMS w
 // when run with speed option, no login needed for subsequent records
 // (line indentation within brackets are optional, either way works)
 
-if `[iteration]` equals to 1
+if `iteration` equals to 1
 {
     // visit IMDA ICMS website for managing CITREP
     https://eservice.imda.gov.sg/icms/initializeHomePage.action
@@ -150,7 +150,7 @@ else if '`Profession`' equals to 'Full-Time National Service (NSF)'
 // and click submit, declaration and confirmation manually.
 // for rest of records, automate submission and confirmation
 
-if `[iteration]` equals to 1
+if `iteration` equals to 1
 {
     // use dom step to run JavaScript code on web browser to show message
     dom alert('For this first record, please check through and submit manually')
