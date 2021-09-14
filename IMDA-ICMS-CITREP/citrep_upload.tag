@@ -11,7 +11,7 @@
 // when run with speed option, no login needed for subsequent records
 // (line indentation within brackets are optional, either way works)
 
-if `[iteration]` equals to 1
+if iteration equals to 1
 {
     // visit IMDA ICMS website for managing CITREP
     https://eservice.imda.gov.sg/icms/initializeHomePage.action
