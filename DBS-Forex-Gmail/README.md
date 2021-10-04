@@ -48,7 +48,7 @@ timeout 60 seconds
 
 // Gmail is used here to send email, but desktop apps such as Outlook
 // can also be used by providing image snapshots of their UI elements.
-// To use image snapshots in this workflow, set the browser to 125% zoom.
+// To use image snapshots here, set browser to 125% zoom while at Gmail.
 // (Chrome was set at 125% zoom for this workflow to show actions clearly)
 https://mail.google.com/mail/u/0/
 
