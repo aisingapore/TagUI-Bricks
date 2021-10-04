@@ -10,27 +10,37 @@ This automation flow gets forex rates from DBS.com and sends a csv file of the f
 // visit DBS website with a table of foreign currency exchange rates
 https://www.dbs.com.sg/personal/rates-online/foreign-currency-foreign-exchange.page
 
+// define list of currencies to retrieve their exchange rates
+currencies = ['USD', 'EUR', 'GBP', 'JPY', 'HKD', 'CNY']
+
 // create a blank csv file with the header row containing 2 columns
 dump Currency,Rate to numbers.csv
 
-// extract only the main forex rates table with 19 rows of data
-for row from 1 to 19
-{
+// process currency conversions based on list of currencies
+for n from 0 to currencies.length-1
+    
+    // click on the dropdown before selecting item from dropdown list
+    // this is a non-standard dropdown list, select step not applicable
+    click currToSelectId
+    
     // XPath is a powerful way to identify webpage UI elements
     // intro to XPath - https://builtvisible.com/seo-guide-to-xpath
-
-    // form XPath element identifiers for cells in table
-    read ((//*[contains(@class,"tbl-primary")]/tbody/tr)[`row`]//td)[1] to currency
-    read ((//*[contains(@class,"tbl-primary")]/tbody/tr)[`row`]//td)[3] to rate
-
+    click //*[@id = 'targetUl']//*[text() = '`currencies[n]`']
+    
+    // clear the field and type 1 to calculate exchange rate
+    // the toggle button method is trickier for THB, JPY etc
+    type currToInputId as [clear]1
+    
+    // read converted currency value in SGD
+    read currFromInputId to rate
+    
     // show the forex rate as it is being extracted
-    echo 1 `currency` to S$`rate`
-
+    echo 1 `currencies[n]` to S$`rate`
+    
     // save current row of forex rate to the csv file
     // by using csv_row() function on an array of fields
-    forex_rate = [currency, 'S$' + rate]
+    forex_rate = [currencies[n] + 'SGD', 'S$' + rate]
     write `csv_row(forex_rate)` to numbers.csv
-}
 
 // increase timeout from default 10 seconds to 60 seconds,
 // to let user sign in to Gmail if it is not yet signed in
